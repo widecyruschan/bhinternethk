@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12 table-responsive table-mobile">
                 <table class="table table-striped table-hover">
-                    <thead>
+                    <thead v-if="bookings.length > 0">
                         <tr>
                             <th>{{ trans('em.order_id') }}</th>
                             <th>{{ trans('em.event') }}</th>
