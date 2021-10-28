@@ -34,7 +34,7 @@
                         <span>{{ trans('em.ended') }}</span>
                         <span>{{ trans('em.event') }}</span>
                     </div>
-
+                    <div class="event_comInfo">
                     <!-- repetitive events who Upcoming  -->
                     <div class="lgx-event__tag" v-if="event.repetitive && moment().format('YYYY-MM-DD') < convert_date_to_local(event.start_date, 'YYYY-MM-DD')"
                     >
@@ -50,6 +50,7 @@
                     </div>
 
                      <!-- repetitive events who Ended -->
+                     
                     <div class="lgx-event__tag" v-if="event.repetitive && moment().format('YYYY-MM-DD') > convert_date_to_local(event.end_date, 'YYYY-MM-DD')">
                         <span >{{ trans('em.event') }}</span>
                         <span>{{ trans('em.ended') }}</span>
@@ -60,7 +61,7 @@
                         <span><i class="fas fa-signal"></i> {{ trans('em.online') }}</span>
                         <span>{{ trans('em.event') }}</span>
                     </div>
-
+                        </div>
                     <div class="lgx-event__image">
                         <img :src="'/storage/'+event.thumbnail" alt="">
                     </div>
