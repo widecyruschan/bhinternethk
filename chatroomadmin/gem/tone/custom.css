@@ -1,0 +1,1864 @@
+:root{
+    --linear-gradient:linear-gradient(to right,#cebf6c,#a88c5e);
+}
+.swr-grupo .panel > .textbox > .box > i {
+  display: block;
+}
+.swr-grupo .lside > .head {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .aside > .head i {
+  color: #a9a9a9;
+}
+.swr-grupo .lside > .head i {
+  font-size: 25px;
+}
+.swr-grupo .lside > .search {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.swr-grupo .lside > .search > input {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .lside > .search > input,
+.swr-grupo .lside > .search > i {
+  color: #676767;
+}
+.swr-grupo .lside > .search > input {
+  font-size: 14px;
+}
+.swr-grupo .lside > .search > i {
+  font-size: 16px;
+}
+.swr-grupo .lside > .tabs {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .lside > .tabs > ul > li {
+  color: #808080;
+}
+.swr-grupo .lside > .tabs > ul > li.active {
+  color: #000000;
+}
+.swr-grupo .lside > .tabs > ul > li.active {
+  border-color: #b49f6b;
+}
+.swr-grupo .lside {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .lside > .content > .list > li > div > .center > b > span {
+  color: #696767;
+}
+.swr-grupo .lside > .content > .list > li > div > .center > span {
+  color: #828588;
+}
+.swr-grupo .lside > .content > .list > li > div > .center > b > span {
+  font-size: 13px;
+}
+.swr-grupo .lside > .content > .list > li > div > .center > span {
+  font-size: 12px;
+}
+.swr-grupo .lside > .content > .list > li > div > .right {
+  color: #a4a5a7;
+}
+.swr-grupo .lside > .content > .list > li > div > .right {
+  font-size: 11px;
+}
+.swr-grupo .lside .opt > ul > li:hover {
+  background: var(--linear-gradient);
+}
+.swr-grupo .lside .opt > ul > li:hover {
+  color: #ffffff;
+}
+.swr-grupo .lside > .content > .addmore > span {
+  background: var(--linear-gradient);
+}
+.swr-grupo .lside > .content > .addmore > span {
+  color: #ffffff;
+}
+.swr-grupo .lside > .content > .addmore > span > i {
+  font-size: 16px;
+}
+.swr-grupo .rside > .head {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .rside > .top > .left > span > span {
+  color: #5a5a5a;
+}
+.swr-grupo .rside > .top > .left > span > span > span {
+  color: #8b8e90;
+}
+.swr-grupo .rside > .search {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.swr-grupo .rside > .search > input {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .rside > .search > input,
+.swr-grupo .rside > .search > i {
+  color: #676767;
+}
+.swr-grupo .rside > .search > input {
+  font-size: 14px;
+}
+.swr-grupo .rside > .search > i {
+  font-size: 16px;
+}
+.swr-grupo .rside > .tabs {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .rside > .tabs > ul > li {
+  color: #808080;
+}
+.swr-grupo .rside > .tabs > ul > li.active {
+  color: #000000;
+}
+.swr-grupo .rside > .tabs > ul > li.active {
+  border-color: #b49f6b;
+}
+.swr-grupo .rside {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .rside > .content > .list > li > div > .center > b > span {
+  color: #696767;
+}
+.swr-grupo .rside > .content > .list > li > div > .center > span {
+  color: #828588;
+}
+.swr-grupo .rside > .content > .list > li > div > .center > b > span {
+  font-size: 13px;
+}
+.swr-grupo .rside > .content > .list > li > div > .center > span {
+  font-size: 12px;
+}
+.swr-grupo .rside > .content > .list > li > div > .right {
+  color: #a4a5a7;
+}
+.swr-grupo .rside > .content > .list > li > div > .right {
+  font-size: 11px;
+}
+.swr-grupo .rside .opt > ul > li:hover {
+  background: var(--linear-gradient);
+}
+.swr-grupo .rside .opt > ul > li:hover {
+  color: #ffffff;
+}
+.swr-grupo .rside > .content > .addmore > span {
+  background: var(--linear-gradient);
+}
+.swr-grupo .rside > .content > .addmore > span {
+  color: #ffffff;
+}
+.swr-grupo .rside > .content > .addmore > span > i {
+  font-size: 16px;
+}
+.swr-menu {
+  background: var(--linear-gradient);
+}
+.swr-menu {
+  color: #ffffff;
+}
+.swr-menu > ul > li:hover,
+.swr-menu > ul > li.active {
+  background: linear-gradient(to right, #101010, #101010);
+}
+.swr-menu > ul > li:hover,
+.swr-menu > ul > li.active {
+  color: #ffffff;
+}
+.swr-grupo .panel {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.swr-grupo .zeroelem > .welcome > span > i {
+  color: #6b6b6b;
+}
+.swr-grupo .zeroelem > .welcome > span > i.title {
+  font-size: 21px;
+}
+.swr-grupo .zeroelem > .welcome > span > i.desc {
+  font-size: 15px;
+}
+.swr-grupo .zeroelem > .welcome > span > i.foot {
+  font-size: 13px;
+}
+.swr-grupo .panel > .head {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .panel > .head > .left > span > span {
+  color: #b49f6b;
+}
+.swr-grupo .panel > .head > .left > span > span {
+  font-size: 13px;
+}
+.swr-grupo .panel > .head > .left > span > span > span,
+.swr-grupo .panel > .head > .left > span > span > .typing {
+  color: #8b8e90;
+}
+.swr-grupo .panel > .head > .left > span > span > span,
+.swr-grupo .panel > .head > .left > span > span > .typing {
+  font-size: 12px;
+}
+.swr-grupo .panel > .head > .right > i {
+  color: #8b8e90;
+}
+.swr-grupo .panel > .head > .right > i {
+  font-size: 19px;
+}
+.swr-grupo .panel > .searchbar > span > input {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .panel > .searchbar > span,
+.swr-grupo .panel > .searchbar > span > input {
+  color: #6b6b6b;
+}
+.swr-grupo .panel > .searchbar > span > input {
+  font-size: 14px;
+}
+.swr-grupo .panel > .searchbar > span > i {
+  font-size: 16px;
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  color: #333333;
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > i i.mentnd {
+  color: #ff9800;
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  font-size: 13px;
+}
+.swr-grupo .panel > .room > .msgs > li > div i.info {
+  color: #333333;
+}
+.swr-grupo .panel > .room > .msgs > li > div i.info {
+  font-size: 10px;
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  background: var(--linear-gradient);
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  color: #ffffff;
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > i i.mentnd {
+  color: #ffeb3b;
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  font-size: 13px;
+}
+.swr-grupo .panel > .room > .msgs > li.you > div i.info {
+  color: #ffffff;
+}
+.swr-grupo .panel > .room > .msgs > li.you > div i.info {
+  font-size: 10px;
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > i > span.audioplay {
+  background: linear-gradient(to right, #607d8b, #607d8b);
+}
+.swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.play {
+  color: #ffffff;
+}
+.swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.seek
+  > i.bar {
+  background: linear-gradient(to right, #616161, #616161);
+}
+.swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.seek
+  > i.bar
+  > i {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.icon {
+  background: linear-gradient(to right, #3f535d, #3f535d);
+}
+.swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.icon {
+  color: #ffffff;
+}
+.swr-grupo .panel > .textbox > .box {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.emojionearea.focused,
+.emojionearea > .emojionearea-editor,
+.emojionearea {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.emojionearea.focused,
+.emojionearea > .emojionearea-editor,
+.emojionearea {
+  color: #676767;
+}
+.grupo-pop > div > form > .head {
+  background: var(--linear-gradient);
+}
+.grupo-pop > div > form > .head {
+  color: #ffffff;
+}
+.grupo-pop > div > form > .head {
+  font-size: 14px;
+}
+.grupo-pop > div > form > .search {
+  background: linear-gradient(to right, #181a21, #181a21);
+}
+.grupo-pop > div > form > .search > i,
+.grupo-pop > div > form > .search > input {
+  color: #e2e2e2;
+}
+.grupo-pop > div > form {
+  background: linear-gradient(to right, #232630, #252d40);
+}
+.grupo-pop > div > form > div > div > label {
+  color: #ffffff;
+}
+.grupo-pop > div > form > div > div > label {
+  font-size: 14px;
+}
+.grupo-pop > div > form > .fields > div > span,
+.grupo-pop > div > form > div > div > input,
+.grupo-pop > div > form > div > div > select,
+.grupo-pop > div > form > div > div > textarea {
+  color: #9fabb1;
+}
+.grupo-pop > div > form > .fields > div > span,
+.grupo-pop > div > form > div > div > input,
+.grupo-pop > div > form > div > div > select,
+.grupo-pop > div > form > div > div > textarea {
+  font-size: 15px;
+}
+.grupo-pop > div > form > input[type="submit"] {
+  background: var(--linear-gradient);
+}
+.grupo-pop > div > form > input[type="submit"] {
+  color: #ffffff;
+}
+.grupo-pop > div > form > input[type="submit"] {
+  font-size: 14px;
+}
+.grupo-pop > div > form > span.cancel {
+  font-size: 13px;
+}
+.grupo-pop > div > form > span.cancel {
+  color: #c7c7c7;
+}
+.swr-grupo .aside > .content .profile > .top > span.name {
+  color: #ffffff;
+}
+.swr-grupo .aside > .content .profile > .top > span.role {
+  color: #ffffff;
+}
+.swr-grupo .aside > .content .profile > .top > span.role {
+  font-size: 14px;
+}
+.swr-grupo .aside > .content .profile > .top > span.name {
+  font-size: 15px;
+}
+.swr-grupo .aside > .content .profile > .middle > span.pm {
+  background: linear-gradient(to right, #e91e63, #ff9c07);
+}
+.swr-grupo .aside > .content .profile > .middle > span.pm {
+  color: #ffffff;
+}
+.swr-grupo .aside > .content .profile > .middle > span.pm {
+  font-size: 14px;
+}
+.swr-grupo .aside > .content .profile > .top > span.edit > i {
+  font-size: 13px;
+}
+.swr-grupo .aside > .content .profile > .top > span.edit > i {
+  color: #ffc107;
+}
+.swr-grupo .aside > .content .profile > .middle {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .aside > .content .profile > .middle > span.stats > span {
+  color: #727273;
+}
+.swr-grupo .aside > .content .profile > .middle > span.stats > span {
+  font-size: 19px;
+}
+.swr-grupo .aside > .content .profile > .middle > span.stats > span > i {
+  color: #9a9a9a;
+}
+.swr-grupo .aside > .content .profile > .middle > span.stats > span > i {
+  font-size: 12px;
+}
+.swr-grupo .aside > .content .profile > .bottom {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.swr-grupo .aside > .content .profile > .bottom > div > ul > li > b {
+  color: #212529;
+}
+.swr-grupo .aside > .content .profile > .bottom > div > ul > li > b {
+  font-size: 14px;
+}
+.swr-grupo .aside > .content .profile > .bottom > div > ul > li > span {
+  color: #212529;
+}
+.swr-grupo .aside > .content .profile > .bottom > div > ul > li > span {
+  font-size: 14px;
+}
+.ajx-ripple div {
+  border-color: #ffffff;
+}
+.ajxprocess > div > span {
+  color: #ffffff;
+}
+.ajxprocess > div > span > span {
+  color: #ffffff;
+}
+.ajxprocess > div {
+  background: var(--linear-gradient);
+}
+.two > section > div > div > .box {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.two > section > div > div .logo {
+  background: linear-gradient(to right, #000000, #000000);
+}
+.two > section {
+  color: #636363;
+}
+.two > section > div > div > .box .swithlogin > ul > li.active {
+  color: #b49f6b;
+}
+.two > section {
+  font-size: 14px;
+}
+.two > section > div > div form label {
+  background: linear-gradient(to right, #eef2f5, #eef2f5);
+}
+.two > section > div > div form label > input,
+.two > section > div > div form label > i {
+  color: #636363;
+}
+.two > section > div > div form label > input {
+  font-size: 13px;
+}
+.two > section > div > div form label > i {
+  font-size: 14px;
+}
+.two > section > div > div form .submit {
+  background: var(--linear-gradient);
+}
+.two > section > div > div form .submit {
+  color: #ffffff;
+}
+.two > section > div > div form .submit {
+  font-size: 14px;
+}
+.sign > section > div > div form > .switch {
+  background: linear-gradient(to right, #eef2f5, #eef2f5);
+}
+.sign > section > div > div form > .switch > i {
+  color: #636363;
+}
+.sign > section > div > div form > .switch > i {
+  font-size: 12px;
+}
+.two > section > div > div form > .switch > span {
+  background: linear-gradient(to right, #000000, #000000);
+}
+.two > section > div > div form > .switch > span:hover {
+  background: linear-gradient(to right, #000000, #000000);
+}
+.two > section > div > div form > .switch > span:hover {
+  color: #ffffff;
+}
+.two > section > div > div form > .switch > span {
+  color: #ffffff;
+}
+.two > section > div > div form > .switch > span {
+  font-size: 12px;
+}
+.gr-consent {
+  background: linear-gradient(to right, #1c2123, #1c2123);
+}
+.gr-consent {
+  color: #ffffff;
+}
+.gr-consent > span > span > i {
+  color: #ffc107;
+}
+.sign > section > div > div .tos > h4 > span {
+  color: #ffc107;
+}
+.sign > section > div > div .tos > h4 > i {
+  color: #636363;
+}
+.gr-consent > span > i {
+  background: linear-gradient(to right, #f44336, #e91e63);
+}
+.gr-consent > span > i {
+  color: #ffffff;
+}
+.swr-grupo .aside > .content .profile > .top {
+  background: var(--linear-gradient);
+}
+.swr-grupo .panel > .room > .groupreload > i {
+  background: linear-gradient(to right, #000000, #000000);
+}
+.swr-grupo .panel > .room > .groupreload > i {
+  font-size: 13px;
+}
+.swr-grupo .panel > .room > .groupreload > i {
+  color: #ffffff;
+}
+.gruploader {
+  background: var(--linear-gradient);
+}
+.gruploader {
+  color: #ffffff;
+}
+.gruploader {
+  font-size: 11px;
+}
+.swr-grupo .panel > .room > .msgs > li.right > div i.info > i.tick {
+  color: #ffffff;
+}
+.swr-grupo .panel > .room > .msgs > li.right > div i.info > i.tick.read > i {
+  color: #ffeb3b;
+}
+.swr-grupo .panel > .textbox > .box > i {
+  background: var(--linear-gradient);
+}
+.swr-grupo .opt > ul {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .opt > ul {
+  color: #a4a5a7;
+}
+.swr-grupo .aside > .tabs > ul > li > .subtab {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .aside > .tabs > ul > li > .subtab {
+  color: #000000;
+}
+.swr-grupo .aside > .tabs > ul > li > .subtab {
+  color: #808080;
+}
+.swr-grupo .aside > .tabs > ul > li > .subtab > li:hover,
+.swr-grupo .aside > .tabs > ul > li > .subtab > li.active {
+  background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > .urlpreview {
+  background: var(--linear-gradient);
+}
+.swr-grupo .panel > .room > .msgs > li.you > div > .msg > .urlpreview {
+  color: #ffffff;
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > .urlpreview {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo .panel > .room > .msgs > li > div > .msg > .urlpreview {
+  color: #4c4c4c;
+}
+.swr-grupo .panel > .textbox > .box > .icon > .gr-moreico > ul > li > span {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.swr-grupo
+  .panel
+  > .textbox
+  > .box
+  > .icon
+  > .gr-moreico
+  > ul
+  > li
+  > span:hover {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .lside{position: relative;}
+.dark .swr-grupo .lside > .head {
+  background: linear-gradient(to right, #212529, #212529);
+}
+.dark .swr-grupo .aside > .head i {
+  color: #a9a9a9;
+}
+.dark .swr-grupo .lside > .head i {
+  font-size: 25px;
+}
+.dark .swr-grupo .lside > .search {
+  background: none;
+  position: absolute;
+  bottom: 0px;
+  width: 80%;
+
+}
+.dark .swr-grupo .lside > .search > input {
+  background: linear-gradient(to right, #282d31, #282d31);
+}
+.dark .swr-grupo .lside > .search > input,
+.dark .swr-grupo .lside > .search > i {
+  color: #a7a7a7;
+}
+.dark .swr-grupo .lside > .search > input {
+  font-size: 14px;
+}
+.dark .swr-grupo .lside > .search > i {
+  font-size: 16px;
+}
+.dark .swr-grupo .lside > .tabs {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark .swr-grupo .lside > .tabs > ul > li {
+  color: #808080;
+}
+.dark .swr-grupo .lside > .tabs > ul > li.active {
+  color: #adadad;
+}
+.dark .swr-grupo .lside > .tabs > ul > li.active {
+  border-color: #b49f6b;
+}
+.dark .swr-grupo .lside {
+  background: linear-gradient(to right, #222529, #222529);
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+  color: #ababab;
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .center > span {
+  color: #828588;
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+  font-size: 13px;
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .center > span {
+  font-size: 12px;
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .right {
+  color: #a4a5a7;
+}
+.dark .swr-grupo .lside > .content > .list > li > div > .right {
+  font-size: 11px;
+}
+.dark .swr-grupo .lside .opt > ul > li:hover {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .lside .opt > ul > li:hover {
+  color: #ffffff;
+}
+.dark .swr-grupo .lside > .content > .addmore > span {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .lside > .content > .addmore > span {
+  color: #ffffff;
+}
+.dark .swr-grupo .lside > .content > .addmore > span > i {
+  font-size: 16px;
+}
+.dark .swr-grupo .rside > .head {
+  background: linear-gradient(to right, #212529, #212529);
+}
+.dark .swr-grupo .rside > .top > .left > span > span {
+  color: #b5b5b5;
+}
+.dark .swr-grupo .rside > .top > .left > span > span > span {
+  color: #8b8e90;
+}
+.dark .swr-grupo .rside > .search {
+  background: linear-gradient(to right, #1c1f22, #1c1f22);
+}
+.dark .swr-grupo .rside > .search > input {
+  background: linear-gradient(to right, #282d31, #282d31);
+}
+.dark .swr-grupo .rside > .search > input,
+.dark .swr-grupo .rside > .search > i {
+  color: #a7a7a7;
+}
+.dark .swr-grupo .rside > .search > input {
+  font-size: 14px;
+}
+.dark .swr-grupo .rside > .search > i {
+  font-size: 16px;
+}
+.dark .swr-grupo .rside > .tabs {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark .swr-grupo .rside > .tabs > ul > li {
+  color: #808080;
+}
+.dark .swr-grupo .rside > .tabs > ul > li.active {
+  color: #e9e9e9;
+}
+.dark .swr-grupo .rside > .tabs > ul > li.active {
+  border-color: #b49f6b;
+}
+.dark .swr-grupo .rside {
+  background: linear-gradient(to right, #222529, #222529);
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+  color: #ababab;
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .center > span {
+  color: #828588;
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+  font-size: 13px;
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .center > span {
+  font-size: 12px;
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .right {
+  color: #a4a5a7;
+}
+.dark .swr-grupo .rside > .content > .list > li > div > .right {
+  font-size: 11px;
+}
+.dark .swr-grupo .rside .opt > ul > li:hover {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .rside .opt > ul > li:hover {
+  color: #ffffff;
+}
+.dark .swr-grupo .rside > .content > .addmore > span {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .rside > .content > .addmore > span {
+  color: #ffffff;
+}
+.dark .swr-grupo .rside > .content > .addmore > span > i {
+  font-size: 16px;
+}
+.dark .swr-menu {
+  background: var(--linear-gradient);
+}
+.dark .swr-menu {
+  color: #ffffff;
+}
+.dark .swr-menu > ul > li:hover,
+.dark .swr-menu > ul > li.active {
+  background: linear-gradient(to right, #101010, #101010);
+}
+.dark .swr-menu > ul > li:hover,
+.dark .swr-menu > ul > li.active {
+  color: #ffffff;
+}
+.dark .swr-grupo .panel {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark .swr-grupo .zeroelem > .welcome > span > i {
+  color: #b9b9b9;
+}
+.dark .swr-grupo .zeroelem > .welcome > span > i.title {
+  font-size: 21px;
+}
+.dark .swr-grupo .zeroelem > .welcome > span > i.desc {
+  font-size: 15px;
+}
+.dark .swr-grupo .zeroelem > .welcome > span > i.foot {
+  font-size: 13px;
+}
+.dark .swr-grupo .panel > .head {
+  background: linear-gradient(to right, #212529, #212529);
+}
+.dark .swr-grupo .panel > .head > .left > span > span {
+  color: #b49f6b;
+}
+.dark .swr-grupo .panel > .head > .left > span > span {
+  font-size: 13px;
+}
+.dark .swr-grupo .panel > .head > .left > span > span > span,
+.dark .swr-grupo .panel > .head > .left > span > span > .typing {
+  color: #8b8e90;
+}
+.dark .swr-grupo .panel > .head > .left > span > span > span,
+.dark .swr-grupo .panel > .head > .left > span > span > .typing {
+  font-size: 12px;
+}
+.dark .swr-grupo .panel > .head > .right > i {
+  color: #8b8e90;
+}
+.dark .swr-grupo .panel > .head > .right > i {
+  font-size: 19px;
+}
+.dark .swr-grupo .panel > .searchbar > span > input {
+  background: linear-gradient(to right, #24272b, #24272b);
+}
+.dark .swr-grupo .panel > .searchbar > span,
+.dark .swr-grupo .panel > .searchbar > span > input {
+  color: #6b6b6b;
+}
+.dark .swr-grupo .panel > .searchbar > span > input {
+  font-size: 14px;
+}
+.dark .swr-grupo .panel > .searchbar > span > i {
+  font-size: 16px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  background: linear-gradient(to right, #24272b, #24272b);
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  color: #b1b1b1;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i i.mentnd {
+  color: #ff9800;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+  font-size: 13px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div i.info {
+  color: #adadad;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div i.info {
+  font-size: 10px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  color: #ffffff;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i i.mentnd {
+  color: #ffeb3b;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+  font-size: 13px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+  color: #ffffff;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+  font-size: 10px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i > span.audioplay {
+  background: linear-gradient(to right, #607d8b, #607d8b);
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.play {
+  color: #ffffff;
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.seek
+  > i.bar {
+  background: linear-gradient(to right, #616161, #616161);
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.seek
+  > i.bar
+  > i {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.icon {
+  background: linear-gradient(to right, #3f535d, #3f535d);
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li
+  > div
+  > .msg
+  > i
+  > span.audioplay
+  > span.icon {
+  color: #ffffff;
+}
+.dark .swr-grupo .panel > .textbox > .box {
+  background: linear-gradient(to right, #24272b, #24272b);
+}
+.dark .emojionearea.focused,
+.dark .emojionearea > .emojionearea-editor,
+.dark .emojionearea {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark .emojionearea.focused,
+.dark .emojionearea > .emojionearea-editor,
+.dark .emojionearea {
+  color: #676767;
+}
+.dark .grupo-pop > div > form > .head {
+  background: var(--linear-gradient);
+}
+.dark .grupo-pop > div > form > .head {
+  color: #ffffff;
+}
+.dark .grupo-pop > div > form > .head {
+  font-size: 14px;
+}
+.dark .grupo-pop > div > form > .search {
+  background: linear-gradient(to right, #181a21, #181a21);
+}
+.dark .grupo-pop > div > form > .search > i,
+.dark .grupo-pop > div > form > .search > input {
+  color: #e2e2e2;
+}
+.dark .grupo-pop > div > form {
+  background: linear-gradient(to right, #232630, #252d40);
+}
+.dark .grupo-pop > div > form > div > div > label {
+  color: #ffffff;
+}
+.dark .grupo-pop > div > form > div > div > label {
+  font-size: 14px;
+}
+.dark .grupo-pop > div > form > .fields > div > span,
+.dark .grupo-pop > div > form > div > div > input,
+.dark .grupo-pop > div > form > div > div > select,
+.dark .grupo-pop > div > form > div > div > textarea {
+  color: #9fabb1;
+}
+.dark .grupo-pop > div > form > .fields > div > span,
+.dark .grupo-pop > div > form > div > div > input,
+.dark .grupo-pop > div > form > div > div > select,
+.dark .grupo-pop > div > form > div > div > textarea {
+  font-size: 15px;
+}
+.dark .grupo-pop > div > form > input[type="submit"] {
+  background: var(--linear-gradient);
+}
+.dark .grupo-pop > div > form > input[type="submit"] {
+  color: #ffffff;
+}
+.dark .grupo-pop > div > form > input[type="submit"] {
+  font-size: 14px;
+}
+.dark .grupo-pop > div > form > span.cancel {
+  font-size: 13px;
+}
+.dark .grupo-pop > div > form > span.cancel {
+  color: #c7c7c7;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.name {
+  color: #ffffff;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.role {
+  color: #ffffff;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.role {
+  font-size: 14px;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.name {
+  font-size: 15px;
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.pm {
+  background: linear-gradient(to right, #e91e63, #ff9c07);
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.pm {
+  color: #ffffff;
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.pm {
+  font-size: 14px;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.edit > i {
+  font-size: 13px;
+}
+.dark .swr-grupo .aside > .content .profile > .top > span.edit > i {
+  color: #ffc107;
+}
+.dark .swr-grupo .aside > .content .profile > .middle {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.stats > span {
+  color: #727273;
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.stats > span {
+  font-size: 19px;
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.stats > span > i {
+  color: #9a9a9a;
+}
+.dark .swr-grupo .aside > .content .profile > .middle > span.stats > span > i {
+  font-size: 12px;
+}
+.dark .swr-grupo .aside > .content .profile > .bottom {
+  background: linear-gradient(to right, #222529, #222529);
+}
+.dark .swr-grupo .aside > .content .profile > .bottom > div > ul > li > b {
+  color: #cecece;
+}
+.dark .swr-grupo .aside > .content .profile > .bottom > div > ul > li > b {
+  font-size: 14px;
+}
+.dark .swr-grupo .aside > .content .profile > .bottom > div > ul > li > span {
+  color: #969292;
+}
+.dark .swr-grupo .aside > .content .profile > .bottom > div > ul > li > span {
+  font-size: 14px;
+}
+.dark .ajx-ripple div {
+  border-color: #ffffff;
+}
+.dark .ajxprocess > div > span {
+  color: #ffffff;
+}
+.dark .ajxprocess > div > span > span {
+  color: #ffffff;
+}
+.dark .ajxprocess > div {
+  background: var(--linear-gradient);
+}
+.dark .gr-consent {
+  background: linear-gradient(to right, #1c2123, #1c2123);
+}
+.dark .gr-consent {
+  color: #ffffff;
+}
+.dark .gr-consent > span > i {
+  background: linear-gradient(to right, #f44336, #e91e63);
+}
+.dark .gr-consent > span > i {
+  color: #ffffff;
+}
+.dark .swr-grupo .aside > .content .profile > .top {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .panel > .room > .groupreload > i {
+  background: linear-gradient(to right, #000000, #000000);
+}
+.dark .swr-grupo .panel > .room > .groupreload > i {
+  font-size: 13px;
+}
+.dark .swr-grupo .panel > .room > .groupreload > i {
+  color: #ffffff;
+}
+.dark .gruploader {
+  background: var(--linear-gradient);
+}
+.dark .gruploader {
+  color: #ffffff;
+}
+.dark .gruploader {
+  font-size: 11px;
+}
+.dark .swr-grupo .panel > .room > .msgs > li.right > div i.info > i.tick {
+  color: #ffffff;
+}
+.dark
+  .swr-grupo
+  .panel
+  > .room
+  > .msgs
+  > li.right
+  > div
+  i.info
+  > i.tick.read
+  > i {
+  color: #ffeb3b;
+}
+.dark .swr-grupo .panel > .textbox > .box > i {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .opt > ul {
+  background: linear-gradient(to right, #434242, #434242);
+}
+.dark .swr-grupo .opt > ul {
+  color: #a4a5a7;
+}
+.dark .swr-grupo .aside > .tabs > ul > li > .subtab {
+  background: linear-gradient(to right, #24272b, #24272b);
+}
+.dark .swr-grupo .aside > .tabs > ul > li > .subtab {
+  color: #a7a7a7;
+}
+.dark .swr-grupo .aside > .tabs > ul > li > .subtab {
+  color: #bdbcbc;
+}
+.dark .swr-grupo .aside > .tabs > ul > li > .subtab > li:hover,
+.dark .swr-grupo .aside > .tabs > ul > li > .subtab > li.active {
+  background: linear-gradient(to right, #202121, #202121);
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > .urlpreview {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > .urlpreview {
+  color: #ffffff;
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > .urlpreview {
+  background: linear-gradient(to right, #24272b, #24272b);
+}
+.dark .swr-grupo .panel > .room > .msgs > li > div > .msg > .urlpreview {
+  color: #b1b1b1;
+}
+.dark
+  .swr-grupo
+  .panel
+  > .textbox
+  > .box
+  > .icon
+  > .gr-moreico
+  > ul
+  > li
+  > span {
+  background: linear-gradient(to right, #191b1e, #191b1e);
+}
+.dark
+  .swr-grupo
+  .panel
+  > .textbox
+  > .box
+  > .icon
+  > .gr-moreico
+  > ul
+  > li
+  > span:hover {
+  background: var(--linear-gradient);
+}
+.emojionearea > .emojionearea-editor {
+  font-size: 13px;
+}
+.swr-grupo .grradioplayer {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.dark .swr-grupo .grradioplayer {
+  background: linear-gradient(to right, #1c1f23, #1c1f23);
+}
+.swr-grupo .grradioplayer > div > .rcontrols > i.rplay {
+  background: var(--linear-gradient);
+}
+.dark .swr-grupo .grradioplayer > div > .rcontrols > i.rplay {
+  background: var(--linear-gradient);
+}
+.grgif > .wrap > .switchtabs > ul > li.active {
+  background: var(--linear-gradient);
+}
+.dark .grgif > .wrap > .switchtabs > ul > li.active {
+  background: var(--linear-gradient);
+}
+@media (max-width: 767.98px) {
+  .swr-grupo .lside > .head {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .aside > .head i {
+    color: #ffffff;
+  }
+  .swr-grupo .lside > .head i {
+    font-size: 25px;
+  }
+  .swr-grupo .lside > .search {
+    background: linear-gradient(to right, #000000, #000000);
+  }
+  .swr-grupo .lside > .search > input {
+    background: linear-gradient(to right, #000000, #000000);
+  }
+  .swr-grupo .lside > .search > input,
+  .swr-grupo .lside > .search > i {
+    color: #ffffff;
+  }
+  .swr-grupo .lside > .search > input {
+    font-size: 14px;
+  }
+  .swr-grupo .lside > .search > i {
+    font-size: 16px;
+  }
+  .swr-grupo .lside > .tabs {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .lside > .tabs > ul > li {
+    color: #808080;
+  }
+  .swr-grupo .lside > .tabs > ul > li.active {
+    color: #000000;
+  }
+  .swr-grupo .lside > .tabs > ul > li.active {
+  }
+  .swr-grupo .lside {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+    color: #696767;
+  }
+  .swr-grupo .lside > .content > .list > li > div > .center > span {
+    color: #828588;
+  }
+  .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+    font-size: 13px;
+  }
+  .swr-grupo .lside > .content > .list > li > div > .center > span {
+    font-size: 12px;
+  }
+  .swr-grupo .lside > .content > .list > li > div > .right {
+    color: #a4a5a7;
+  }
+  .swr-grupo .lside > .content > .list > li > div > .right {
+    font-size: 11px;
+  }
+  .swr-grupo .lside .opt > ul > li:hover {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .lside .opt > ul > li:hover {
+    color: #ffffff;
+  }
+  .swr-grupo .lside > .content > .addmore > span {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .lside > .content > .addmore > span {
+    color: #ffffff;
+  }
+  .swr-grupo .lside > .content > .addmore > span > i {
+    font-size: 16px;
+  }
+  .swr-grupo .aside > .head,
+  .swr-grupo .panel > .head,
+  .swr-grupo .rside > .top {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .rside > .top > .left > span > span {
+    color: #ffffff;
+  }
+  .swr-grupo .rside > .top > .left > span > span > span {
+    color: #ffffff;
+  }
+  .swr-grupo .rside > .search {
+    background: linear-gradient(to right, #000000, #000000);
+  }
+  .swr-grupo .rside > .search > input {
+    background: linear-gradient(to right, #000000, #000000);
+  }
+  .swr-grupo .rside > .search > input,
+  .swr-grupo .rside > .search > i {
+    color: #ffffff;
+  }
+  .swr-grupo .rside > .search > input {
+    font-size: 14px;
+  }
+  .swr-grupo .rside > .search > i {
+    font-size: 16px;
+  }
+  .swr-grupo .rside > .tabs {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .rside > .tabs > ul > li {
+    color: #808080;
+  }
+  .swr-grupo .rside > .tabs > ul > li.active {
+    color: #000000;
+  }
+  .swr-grupo .rside > .tabs > ul > li.active {
+    border-color: #b49f6b;
+  }
+  .swr-grupo .rside {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+    color: #696767;
+  }
+  .swr-grupo .rside > .content > .list > li > div > .center > span {
+    color: #828588;
+  }
+  .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+    font-size: 13px;
+  }
+  .swr-grupo .rside > .content > .list > li > div > .center > span {
+    font-size: 12px;
+  }
+  .swr-grupo .rside > .content > .list > li > div > .right {
+    color: #a4a5a7;
+  }
+  .swr-grupo .rside > .content > .list > li > div > .right {
+    font-size: 11px;
+  }
+  .swr-grupo .rside .opt > ul > li:hover {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .rside .opt > ul > li:hover {
+    color: #ffffff;
+  }
+  .swr-grupo .rside > .content > .addmore > span {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .rside > .content > .addmore > span {
+    color: #ffffff;
+  }
+  .swr-grupo .rside > .content > .addmore > span > i {
+    font-size: 16px;
+  }
+  .swr-menu {
+    background: var(--linear-gradient);
+  }
+  .swr-menu {
+    color: #ffffff;
+  }
+  .swr-menu > ul > li:hover,
+  .swr-menu > ul > li.active {
+    background: linear-gradient(to right, #101010, #101010);
+  }
+  .swr-menu > ul > li:hover,
+  .swr-menu > ul > li.active {
+    color: #ffffff;
+  }
+  .swr-grupo .panel {
+    background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+  }
+  .swr-grupo .zeroelem > .welcome > span > i {
+    color: #6b6b6b;
+  }
+  .swr-grupo .zeroelem > .welcome > span > i.title {
+    font-size: 21px;
+  }
+  .swr-grupo .zeroelem > .welcome > span > i.desc {
+    font-size: 15px;
+  }
+  .swr-grupo .zeroelem > .welcome > span > i.foot {
+    font-size: 13px;
+  }
+  .swr-grupo .panel > .head {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .panel > .head > .left > span > span {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .head > .left > span > span {
+    font-size: 13px;
+  }
+  .swr-grupo .panel > .head > .left > span > span > span,
+  .swr-grupo .panel > .head > .left > span > span > .typing {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .head > .left > span > span > span,
+  .swr-grupo .panel > .head > .left > span > span > .typing {
+    font-size: 12px;
+  }
+  .swr-grupo .panel > .head > .right > i {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .head > .right > i {
+    font-size: 22px;
+  }
+  .swr-grupo .panel > .searchbar > span > input {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .panel > .searchbar > span,
+  .swr-grupo .panel > .searchbar > span > input {
+    color: #6b6b6b;
+  }
+  .swr-grupo .panel > .searchbar > span > input {
+    font-size: 14px;
+  }
+  .swr-grupo .panel > .searchbar > span > i {
+    font-size: 16px;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    color: #333333;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div > .msg > i > i.mentnd {
+    color: #ff9800;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    font-size: 13px;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div i.info {
+    color: #333333;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div i.info {
+    font-size: 10px;
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    background: var(--linear-gradient);
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i > i.mentnd {
+    color: #ffeb3b;
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    font-size: 13px;
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+    font-size: 10px;
+  }
+  .swr-grupo .panel > .room > .msgs > li > div > .msg > i > span.audioplay {
+    background: linear-gradient(to right, #607d8b, #607d8b);
+  }
+  .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.play {
+    color: #ffffff;
+  }
+  .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.seek
+    > i.bar {
+    background: linear-gradient(to right, #616161, #616161);
+  }
+  .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.seek
+    > i.bar
+    > i {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.icon {
+    background: linear-gradient(to right, #3f535d, #3f535d);
+  }
+  .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.icon {
+    color: #ffffff;
+  }
+  .swr-grupo .panel > .textbox > .box {
+    background: linear-gradient(to right, #f7f9fb, #f7f9fb);
+  }
+  .emojionearea.focused,
+  .emojionearea > .emojionearea-editor,
+  .emojionearea {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .emojionearea.focused,
+  .emojionearea > .emojionearea-editor,
+  .emojionearea {
+    color: #676767;
+  }
+  .dark .swr-grupo .lside > .head {
+    background: linear-gradient(to right, #212529, #212529);
+  }
+  .dark .swr-grupo .aside > .head i {
+    color: #a9a9a9;
+  }
+  .dark .swr-grupo .lside > .head i {
+    font-size: 25px;
+  }
+  .dark .swr-grupo .lside > .search {
+    background: linear-gradient(to right, #1c1f22, #1c1f22);
+  }
+  .dark .swr-grupo .lside > .search > input {
+    background: linear-gradient(to right, #282d31, #282d31);
+  }
+  .dark .swr-grupo .lside > .search > input,
+  .dark .swr-grupo .lside > .search > i {
+    color: #a7a7a7;
+  }
+  .dark .swr-grupo .lside > .search > input {
+    font-size: 14px;
+  }
+  .dark .swr-grupo .lside > .search > i {
+    font-size: 16px;
+  }
+  .dark .swr-grupo .lside > .tabs {
+    background: linear-gradient(to right, #191b1e, #191b1e);
+  }
+  .dark .swr-grupo .lside > .tabs > ul > li {
+    color: #808080;
+  }
+  .dark .swr-grupo .lside > .tabs > ul > li.active {
+    color: #adadad;
+  }
+  .dark .swr-grupo .lside > .tabs > ul > li.active {
+  }
+  .dark .swr-grupo .lside {
+    background: linear-gradient(to right, #222529, #222529);
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+    color: #ababab;
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .center > span {
+    color: #828588;
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .center > b > span {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .center > span {
+    font-size: 12px;
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .right {
+    color: #a4a5a7;
+  }
+  .dark .swr-grupo .lside > .content > .list > li > div > .right {
+    font-size: 11px;
+  }
+  .dark .swr-grupo .lside .opt > ul > li:hover {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-grupo .lside .opt > ul > li:hover {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .lside > .content > .addmore > span {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-grupo .lside > .content > .addmore > span {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .lside > .content > .addmore > span > i {
+    font-size: 16px;
+  }
+  .dark .swr-grupo .aside > .head,
+  .dark .swr-grupo .panel > .head,
+  .dark .swr-grupo .rside > .top {
+    background: linear-gradient(to right, #212529, #212529);
+  }
+  .dark .swr-grupo .rside > .top > .left > span > span {
+    color: #b5b5b5;
+  }
+  .dark .swr-grupo .rside > .top > .left > span > span > span {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .rside > .search {
+    background: linear-gradient(to right, #1c1f22, #1c1f22);
+  }
+  .dark .swr-grupo .rside > .search > input {
+    background: linear-gradient(to right, #282d31, #282d31);
+  }
+  .dark .swr-grupo .rside > .search > input,
+  .dark .swr-grupo .rside > .search > i {
+    color: #a7a7a7;
+  }
+  .dark .swr-grupo .rside > .search > input {
+    font-size: 14px;
+  }
+  .dark .swr-grupo .rside > .search > i {
+    font-size: 16px;
+  }
+  .dark .swr-grupo .rside > .tabs {
+    background: linear-gradient(to right, #191b1e, #191b1e);
+  }
+  .dark .swr-grupo .rside > .tabs > ul > li {
+    color: #808080;
+  }
+  .dark .swr-grupo .rside > .tabs > ul > li.active {
+    color: #e9e9e9;
+  }
+  .dark .swr-grupo .rside > .tabs > ul > li.active {
+    border-color: #b49f6b;
+  }
+  .dark .swr-grupo .rside {
+    background: linear-gradient(to right, #222529, #222529);
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+    color: #ababab;
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .center > span {
+    color: #828588;
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .center > b > span {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .center > span {
+    font-size: 12px;
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .right {
+    color: #a4a5a7;
+  }
+  .dark .swr-grupo .rside > .content > .list > li > div > .right {
+    font-size: 11px;
+  }
+  .dark .swr-grupo .rside .opt > ul > li:hover {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-grupo .rside .opt > ul > li:hover {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .rside > .content > .addmore > span {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-grupo .rside > .content > .addmore > span {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .rside > .content > .addmore > span > i {
+    font-size: 16px;
+  }
+  .dark .swr-menu {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-menu {
+    color: #ffffff;
+  }
+  .dark .swr-menu > ul > li:hover,
+  .dark .swr-menu > ul > li.active {
+    background: linear-gradient(to right, #101010, #101010);
+  }
+  .dark .swr-menu > ul > li:hover,
+  .dark .swr-menu > ul > li.active {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .panel {
+    background: linear-gradient(to right, #191b1e, #191b1e);
+  }
+  .dark .swr-grupo .zeroelem > .welcome > span > i {
+    color: #b9b9b9;
+  }
+  .dark .swr-grupo .zeroelem > .welcome > span > i.title {
+    font-size: 21px;
+  }
+  .dark .swr-grupo .zeroelem > .welcome > span > i.desc {
+    font-size: 15px;
+  }
+  .dark .swr-grupo .zeroelem > .welcome > span > i.foot {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .panel > .head {
+    background: linear-gradient(to right, #212529, #212529);
+  }
+  .dark .swr-grupo .panel > .head > .left > span > span {
+    color: #a9a9a9;
+  }
+  .dark .swr-grupo .panel > .head > .left > span > span {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .panel > .head > .left > span > span > span,
+  .dark .swr-grupo .panel > .head > .left > span > span > .typing {
+    color: #8b8e90;
+  }
+  .dark .swr-grupo .panel > .head > .left > span > span > span,
+  .dark .swr-grupo .panel > .head > .left > span > span > .typing {
+    font-size: 12px;
+  }
+  .dark .swr-grupo .panel > .head > .right > i {
+    color: #a9a9a9;
+  }
+  .dark .swr-grupo .panel > .head > .right > i {
+    font-size: 22px;
+  }
+  .dark .swr-grupo .panel > .searchbar > span > input {
+    background: linear-gradient(to right, #24272b, #24272b);
+  }
+  .dark .swr-grupo .panel > .searchbar > span,
+  .dark .swr-grupo .panel > .searchbar > span > input {
+    color: #6b6b6b;
+  }
+  .dark .swr-grupo .panel > .searchbar > span > input {
+    font-size: 14px;
+  }
+  .dark .swr-grupo .panel > .searchbar > span > i {
+    font-size: 16px;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    background: linear-gradient(to right, #24272b, #24272b);
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    color: #b1b1b1;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i > i.mentnd {
+    color: #ff9800;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div > .msg > i {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div i.info {
+    color: #adadad;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li > div i.info {
+    font-size: 10px;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    background: var(--linear-gradient);
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i > i.mentnd {
+    color: #ffeb3b;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div > .msg > i {
+    font-size: 13px;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .panel > .room > .msgs > li.you > div i.info {
+    font-size: 10px;
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay {
+    background: linear-gradient(to right, #607d8b, #607d8b);
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.play {
+    color: #ffffff;
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.seek
+    > i.bar {
+    background: linear-gradient(to right, #616161, #616161);
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.seek
+    > i.bar
+    > i {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.icon {
+    background: linear-gradient(to right, #3f535d, #3f535d);
+  }
+  .dark
+    .swr-grupo
+    .panel
+    > .room
+    > .msgs
+    > li
+    > div
+    > .msg
+    > i
+    > span.audioplay
+    > span.icon {
+    color: #ffffff;
+  }
+  .dark .swr-grupo .panel > .textbox > .box {
+    background: linear-gradient(to right, #24272b, #24272b);
+  }
+  .dark .emojionearea.focused,
+  .dark .emojionearea > .emojionearea-editor,
+  .dark .emojionearea {
+    background: linear-gradient(to right, #191b1e, #191b1e);
+  }
+  .dark .emojionearea.focused,
+  .dark .emojionearea > .emojionearea-editor,
+  .dark .emojionearea {
+    color: #676767;
+  }
+}
