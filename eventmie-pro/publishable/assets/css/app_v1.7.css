@@ -8517,6 +8517,12 @@ ul.list-group li.list-group-item:last-child {
     float: left;
     text-shadow: 0 3px 2px #000;
 }
+.lgx-event__tag span {   
+    float: right;
+}
+.lgx-event__online span {   
+    float: left;
+}
 /* .lgx-event__tag span :hover,.lgx-event__online span :hover{
    background: var(--font-color-gold);
 } */
@@ -8557,16 +8563,16 @@ ul.list-group li.list-group-item:last-child {
 .lgx-event__online span:nth-child(2n+1) {
     border-bottom-right-radius: 0;
     padding-top: 10px;
-    padding:10px 5px 10px 10px;
+    padding:10px 0px 10px 10px;
 }
 .lgx-event__online span:nth-child(1n) i {
     padding-right: 4px;
     padding-top: 4px;
 }
 .lgx-event__online span:nth-child(2n) {
-    padding:10px 10px 10px 5px;
+    padding:10px 0px;
     border-top-right-radius: 0;
-    color: #1de9b6;
+    /* color: #1de9b6; */
 }
 .lgx-event__trend {
     position: absolute;
