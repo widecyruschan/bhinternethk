@@ -71,12 +71,10 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Noto Sans, sans-serif;
     font-weight: 700;
 }
-.h4 a,
-h4 a {
+.h4 a,h4 a {
     color: inherit;
 }
-.h4 a:hover,
-h4 a:hover {
+.h4 a:hover,h4 a:hover {
     color: #1b89ef;
 }
 .h5,
@@ -6308,6 +6306,7 @@ ul.list-group li.list-group-item:last-child {
     margin-right: 1rem;
     padding: 2rem 3rem;
     border-radius: 0px;
+    min-height: 200px;
 }
 .lgx-about-service .lgx-single-service-color .icon {
     font-size: 3.8rem;
