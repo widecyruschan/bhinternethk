@@ -496,6 +496,11 @@ class BookingsController extends Controller
         $paypal_express = new PaypalExpress(setting('apps'));
         $flag           = $paypal_express->create_order($order, $currency);
 
+        // 2021-10-28
+        if ($flag['error']=='Authentication failed due to invalid authentication credentials or a missing Authorization header.') {
+			$flag['error'] = '請勾選支付方式以進行購票程序';
+		}
+
         // if order creation successful then redirect to paypal
         if($flag['status'])
             return response(['status' => true, 'url'=>$flag['url'], 'message'=>''], Response::HTTP_OK);

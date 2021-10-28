@@ -643,7 +643,7 @@ return [
 //    'customer_limit_info'     => 'For how many times the same customer can purchase this ticket. (leave blank for unlimited)',
     'customer_limit'          => '每位客戶的預訂限額', // 2021-10-26
     'customer_limit_info'     => '同一個客戶可以購買多少次這張票。 (留空表示無限制)', // 2021-10-26
-    'already_booked'          => 'You have reached maximum booking limit!',
+    'already_booked'          => '您已達到最大預訂限額！', // 2021-10-28
     //'offline_payment_info'    => 'Offline Payment Instructions',
     'offline_payment_info'    => '離線付款說明', // 2021-10-26
     //'offline_payment_info_ie' => 'Instructions to show under Offline Payment Option',

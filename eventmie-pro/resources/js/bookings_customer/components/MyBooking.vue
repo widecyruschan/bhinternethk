@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container bookings-container ">
         <div class="row">
             <div class="col-md-12 table-responsive table-mobile">
                 <table class="table table-striped table-hover">
@@ -96,6 +96,12 @@
                                     <button type="button" class="lgx-btn lgx-btn-sm" @click="booking_id = booking.id"><i class="fas fa-tv"></i> {{ trans('em.online') +' '+ trans('em.event') }}</button>
                                     <online-event  v-if="booking_id == booking.id" :online_location="booking.online_location" :booking_id="booking.id" ></online-event>
                                 </div -->
+                                <div v-if="booking.event_mode=='recorded' && booking.is_paid == 1 && booking.status == 1">
+                                  <button type="button" class="lgx-btn lgx-btn-sm" @click="openReview(booking.review_link, booking.review_desc)"><i class="fas fa-tv"></i> {{ trans('em.review_view') }}</button>
+                                </div>
+                              <div v-if="booking.event_mode=='live' && booking.is_paid == 1 && booking.status == 1">
+                                <button type="button" class="lgx-btn lgx-btn-sm" @click="openLive()"><i class="fas fa-tv"></i> {{ trans('em.live_view') }}</button>
+                              </div>
                             </td>
                         </tr>
 
@@ -114,7 +120,16 @@
             </div>
         </div>
     </div>
+
+  <form id="review_player" action="/bhcam2/singleCam.php" style="display:none;" method="post" target="_blank">
+    <input id="review_link" name="v" value="">
+    <textarea id="review_desc" name="desc"></textarea>
+  </form>
+  <form id="live_player" action="/bhcam2/user.php" style="display:none;" method="post" target="_blank">
+  </form>
+
 </template>
+
 
 
 <script>
@@ -223,6 +238,26 @@ export default {
             if(id && order_number) {
                 return route('eventmie.downloads_index',[id, order_number]);
             }
+        },
+
+        openReview(review_link, review_desc) {
+          let form = '  <form id="review_player" action="/bhcam2/singleCam.php" style="display:none;" method="post" target="_blank">' +
+              '    <input id="review_link" name="v" value="">' +
+              '    <textarea id="review_desc" name="desc"></textarea>' +
+              '  </form>';
+          $('#live_player').remove();
+          $('body').append(form);
+          $('#review_link').val(review_link);
+          $('#review_desc').val(JSON.stringify(review_desc));
+          $('#review_player').submit();
+        },
+
+        openLive() {
+          let form = '  <form id="live_player" action="/bhcam2/user.php" style="display:none;" method="post" target="_blank">' +
+              '  </form>';
+          $('#live_player').remove();
+          $('body').append(form);
+          $('#live_player').submit();
         },
     },
     mounted() {

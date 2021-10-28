@@ -52,8 +52,8 @@ return [
     'unique'                    => 'UNIQUE',
     'unknown_type'              => 'Unknown Type',
     'update_table'              => 'Update Table',
-    'url_slug'                  => 'URL Slug (must be unique)',
-    'url_slug_ph'               => 'URL slug (ex. posts)',
+    'url_slug'                  => 'Friendly URL (must be unique)', // 2021-10-28 'URL Slug (must be unique)',
+    'url_slug_ph'               => 'Friendly URL (ex. posts)', // 2021-10-28 'URL slug (ex. posts)',
     'visibility'                => 'Visibility',
     'relationship'              => [
         'relationship'         => 'Relationship',

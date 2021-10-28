@@ -23,7 +23,7 @@ return [
         'remember_token'   => 'Remember Token',
         'role'             => 'Role',
         'seo_title'        => 'SEO Title',
-        'slug'             => 'Slug',
+        'slug'             => 'Friendly URL', // 2021-10-28 'Slug',
         'status'           => 'Status',
         'title'            => 'Title',
         'updated_at'       => 'Updated At',

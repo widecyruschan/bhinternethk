@@ -208,7 +208,7 @@ return [
     "Excerpt"                   => "Excerpt",
     "Body"                      => "Body",
     "Post Image"                => "Post Image",
-    "Slug"                      => "Slug",
+    "Slug"                      => 'Friendly URL', // 2021-10-28 "Slug",
     "Meta Description"          => "Meta Description",
     "Meta Keywords"             => "Meta Keywords",
     "Status"                    => "Status",

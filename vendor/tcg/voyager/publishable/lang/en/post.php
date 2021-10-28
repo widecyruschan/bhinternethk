@@ -12,7 +12,7 @@ return [
     'new'              => 'Create New Post',
     'seo_content'      => 'SEO Content',
     'seo_title'        => 'SEO Title',
-    'slug'             => 'URL slug',
+    'slug'             => 'Friendly URL', // 2021-10-28'URL slug',
     'status'           => 'Post Status',
     'status_draft'     => 'draft',
     'status_pending'   => 'pending',

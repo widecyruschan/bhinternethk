@@ -49,6 +49,6 @@ return [
     'soft_deletes_on'        => 'Show Deleted',
     'soft_deletes_off'       => 'Hide Deleted',
     'updated_order'          => 'Order updated successfully',
-    'url_slug'               => 'URL Slug (must be unique)',
-    'url_slug_ph'            => 'URL slug (ex. posts)',
+    'url_slug'               => 'Friendly URL (must be unique)', // 2021-10-28 'URL Slug (must be unique)',
+    'url_slug_ph'            => 'Friendly URL (ex. posts)', // 2021-10-28 'URL slug (ex. posts)',
 ];

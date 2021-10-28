@@ -188,7 +188,7 @@ return [
     'prices'                            => '價格',
     'where'                             => '哪裡',
     'when'                              => '何時',
-    'get_tickets'                       => '立即獲取門票',
+    'get_tickets'                       => '立即購買門票',
     'got_tickets'                       => '已購買門票', //2021-10-26
     'select_schedule'                   => '點擊日期以購買門票', // 2021-10-28
     'gallery'                           => '相冊',

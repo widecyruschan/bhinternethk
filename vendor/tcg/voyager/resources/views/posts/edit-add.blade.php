@@ -89,7 +89,7 @@
 
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <i class="voyager-character"></i> {{ __('voyager::post.title') }}
+                                <!-- // 2021-10-28 i class="voyager-character"></i --> {{ __('voyager::post.title') }}
                                 <span class="panel-desc"> {{ __('voyager::post.title_sub') }}</span>
                             </h3>
                             <div class="panel-actions">
@@ -203,7 +203,7 @@
                                     '_field_trans' => get_field_translations($dataTypeContent, 'slug')
                                 ])
                                 <input type="text" class="form-control" id="slug" name="slug"
-                                    placeholder="slug"
+                                    placeholder="friendly url"
                                     {!! isFieldSlugAutoGenerator($dataType, $dataTypeContent, "slug") !!}
                                     value="{{ $dataTypeContent->slug ?? '' }}">
                             </div>

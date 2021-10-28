@@ -8513,14 +8513,14 @@ ul.list-group li.list-group-item:last-child {
     font-size: 1rem;
     font-size: 18px;;
     font-weight: 400;
-    
+
     float: left;
     text-shadow: 0 3px 2px #000;
 }
-.lgx-event__tag span {   
+.lgx-event__tag span {
     float: right;
 }
-.lgx-event__online span {   
+.lgx-event__online span {
     float: left;
 }
 /* .lgx-event__tag span :hover,.lgx-event__online span :hover{
@@ -8529,7 +8529,7 @@ ul.list-group li.list-group-item:last-child {
 .lgx-event__tag span:nth-child(2n+1) {
     padding:10px 5px 10px 10px;
     /* background: rgba(27, 137, 239, 0.8); */
-    
+
     border-bottom-left-radius: 0;
     /* border-top-left-radius: 12px; */
 }
@@ -9741,3 +9741,8 @@ table tr td:first-child ,table tr td:nth-child(2){max-width: 20vw;}
 table tr td .lgx-btn{background: var(--font-color-gold3)!important;}
 table tr td .lgx-btn.lgx-btn-danger {background: var(--font-color-gold2)!important;}
 .ticketsPurchased { background: #ccc!important;}
+
+.bookings-container {
+    width: 80%;
+    max-width: none;
+}

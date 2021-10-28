@@ -104,19 +104,28 @@
                         </div>
 
                         <div class="form-group">
-                           <label class="col-sm-2 control-label">YouTube {{ trans('em.video_url') }} ({{ trans('em.optional') }})</label>
+                           <label class="col-sm-2 control-label">{{ trans('em.preview') }}{{ trans('em.video_url') }} ({{ trans('em.optional') }})</label>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="video_link" placeholder="e.g wcnlg8ou2as"  v-model="video_link" @change="isDirty()">
-                                <span class="help-block">{{ trans('em.enter_video_id_only') }}: https://www.youtube.com/watch?v=<strong>wcnlg8ou2as</strong></span>
+                                <span class="help-block">{{ trans('em.enter_video_id_only') }}: https://www.youtube.com/watch?v=<strong>wcnlg8ou2as</strong> OR https://vimeo.com/<strong>253989945</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{{ trans('em.event_mode') }}</label>
+                            <div class="col-md-6">
+                                <input type="radio" class="custom-control-input" name="event_mode"  v-model="event_mode" value="live" @change="isDirty()"> <span> {{ trans('em.play_live') }}</span>
+                                <input type="radio" class="custom-control-input" name="event_mode"  v-model="event_mode" value="recorded" @change="isDirty()"> <span> {{ trans('em.play_recorded') }}</span>
                             </div>
                         </div>
 
                         <!-- // 2021-10-26 -->
-                        <div class="form-group" >
+                        <div class="form-group" v-if="event_mode == 'recorded' ">
                             <label class="col-sm-2 control-label">{{ trans('em.review_link') }} Single-Cam ({{ trans('em.optional') }})</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="review_link" placeholder="e.g 253989945" v-model="review_link" @change="isDirty()">
-                                <span class="help-block">{{ trans('em.enter_video_id_only') }}: https://vimeo.com/<strong>253989945</strong></span>
+                                <input type="text" class="form-control" name="review_link" placeholder="e.g 253989945" v-model="review_link" v-validate="'required'"  @change="isDirty()">
+                                <span v-show="errors.has('review_link')" class="help text-danger">{{ errors.first('review_link') }}</span>
+                                <span class="help-block">{{ trans('em.enter_video_id_only') }}: https://www.youtube.com/watch?v=<strong>wcnlg8ou2as</strong> OR https://vimeo.com/<strong>253989945</strong></span>
                             </div>
                         </div>
 
@@ -133,7 +142,7 @@
                             </div>
                         </div -->
 
-                        <div class="form-group" v-if="review_link > '' ">
+                        <div class="form-group" v-if="event_mode == 'recorded' ">
                             <label>{{ trans('em.description') }}</label>
                             <textarea class="form-control"  rows="3" name="review_desc" :value="review_desc" v-validate="'required'" style="display:none;"></textarea>
                             <ckeditor  v-model="review_desc"></ckeditor>
@@ -179,7 +188,8 @@ export default {
             images              : [],
             multiple_images     : [],
             video_link          : null,
-            // 2021-10-26
+            // 2021-10-27
+            event_mode          : null,
             review_link         : null,
             // review_link1        : null,
             // review_link2        : null,
@@ -290,7 +300,8 @@ export default {
                 this.poster_preview            = this.event.poster ? ('/storage/'+this.event.poster) : null;
                 this.video_link                = this.event.video_link;
                 this.multiple_images           = this.event.images ? JSON.parse(this.event.images) : [];
-                // 2021-10-26
+                // 2021-10-27
+                this.event_mode                = this.event.event_mode;
                 this.review_link               = this.event.review_link;
                 // this.review_link1              = this.event.review_link1;
                 // this.review_link2              = this.event.review_link2;
@@ -362,6 +373,5 @@ export default {
             });
         }
     }
-
 }
 </script>
