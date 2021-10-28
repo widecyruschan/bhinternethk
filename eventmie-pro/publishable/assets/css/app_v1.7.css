@@ -6306,7 +6306,7 @@ ul.list-group li.list-group-item:last-child {
     margin-right: 1rem;
     padding: 2rem 3rem;
     border-radius: 0px;
-    min-height: 200px;
+    min-height: 220px;
 }
 .lgx-about-service .lgx-single-service-color .icon {
     font-size: 3.8rem;
