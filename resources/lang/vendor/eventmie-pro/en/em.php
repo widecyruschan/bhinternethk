@@ -190,7 +190,7 @@ return [
     'when'                              => '何時',
     'get_tickets'                       => '立即獲取門票',
     'got_tickets'                       => '已購買門票', //2021-10-26
-    'select_schedule'                   => '點擊購票', // 2021-10-28
+    'select_schedule'                   => '點擊日期以購買門票', // 2021-10-28
     'gallery'                           => '相冊',
     'watch'                             => '觀看',
     'trailer'                           => '預告片',
@@ -295,7 +295,7 @@ return [
     // V1.2.0
     'export_attendees'                 => "導出參加者",
     'download'                         => "下載",
-    'download_res'                     => "加入", // 2021-10-27
+    'add_resc'                         => "加入", // 2021-10-27
     'thank_you'                        => "謝謝",
     'already'                          => "已經",
     'check_in'                         => "登記",

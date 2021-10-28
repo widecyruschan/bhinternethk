@@ -14,12 +14,12 @@ use Classiebit\Eventmie\Notifications\MailNotification;
 
 class ProfileController extends Controller
 {
-    
+
     public function __construct()
     {
         // language change
         $this->middleware('common');
-    
+
         $this->middleware('auth');
     }
 
@@ -28,7 +28,7 @@ class ProfileController extends Controller
         $user  = $this->getAuthUser();
         return Eventmie::view($view, compact('user', 'extra'));
     }
-    
+
     // get login user
     public function getAuthUser ()
     {
@@ -43,37 +43,37 @@ class ProfileController extends Controller
         {
             return error_redirect('Demo mode');
         }
-        
+
         $this->validate($request, [
             'name' => 'required|string',
             'email' => 'required|email|unique:users,email,'.Auth::id()
         ]);
-        
+
         if(!empty($request->current))
         {
             $data = $this->updateAuthUserPassword($request);
-        
+
             if($data['status'] == false)
             {
                 return error_redirect($data['errors']);
             }
         }
-        
+
         $user = User::find(Auth::id());
 
         $user->name                  = $request->name;
         $user->email                 = $request->email;
         $user->address               = $request->address;
         $user->phone                 = $request->phone;
-        
+
         $this->updatebankDetails($request, $user);
-        
+
         $user->save();
 
         // redirect no matter what so that it never turns back
         $msg = __('eventmie-pro::em.saved').' '.__('eventmie-pro::em.successfully');
         return success_redirect($msg, route('eventmie.profile'));
-        
+
     }
 
     // reset password
@@ -96,7 +96,7 @@ class ProfileController extends Controller
             return ['errors' => __('eventmie-pro::em.current_password_not_match') , 'status' => false];
         }
 
-        
+
         $user->password = Hash::make($request->password);
         $user->save();
 
@@ -109,23 +109,23 @@ class ProfileController extends Controller
         $this->validate($request, [
             'organisation'  => 'required',
         ]);
-        
+
         $manually_approve_organizer = (int)setting('multi-vendor.manually_approve_organizer');
-        
-        
+
+
         $user = User::find(Auth::id());
-        
+
         // manually aporove organizer setting on then don't change role
         if(empty($manually_approve_organizer))
         {
             $user->role_id      = 3;
-        } 
+        }
 
         $user->organisation = $request->organisation;
 
         $user->save();
-    
-        // ====================== Notification ====================== 
+
+        // ====================== Notification ======================
         // Manual Organizer approval email
         $msg[]                  = __('eventmie-pro::em.name').' - '.$user->name;
         $msg[]                  = __('eventmie-pro::em.email').' - '.$user->email;
@@ -147,28 +147,29 @@ class ProfileController extends Controller
             $mail['mail_message']   = __('eventmie-pro::em.became_organiser_successful_msg');
             $mail['action_title']   = __('eventmie-pro::em.view').' '.__('eventmie-pro::em.profile');
             $mail['action_url']     = route('eventmie.profile');
-            $mail['n_type']         = "Approved-Organizer";
+            //$mail['n_type']         = "Approved-Organizer";
+			$mail['n_type']         = "Approved"; // 2021-10-28
         }
-        
+
         // notification for
         $notification_ids       = [
             1, // admin
             $user->id, // logged in user by
         ];
-        
+
         $users = User::whereIn('id', $notification_ids)->get();
         try {
             \Notification::locale(\App::getLocale())->send($users, new MailNotification($mail, $extra_lines));
         } catch (\Throwable $th) {}
-        // ====================== Notification ====================== 
-        
+        // ====================== Notification ======================
+
 
         return redirect()->route('eventmie.profile');
     }
 
     // bank details update only for admin and orgainser
     public function updateBankDetails(Request $request, $user = [])
-    {   
+    {
         $user->organisation        = $request->organisation;
         $user->bank_name           = $request->bank_name;
         $user->bank_code           = $request->bank_code;

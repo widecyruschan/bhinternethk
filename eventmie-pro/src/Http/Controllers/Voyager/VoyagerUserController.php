@@ -256,7 +256,7 @@ class VoyagerUserController extends BaseVoyagerUserController
         if($request->role_id > $currentRoleId) {
             $this->approvedOrganiserNotification($data);
         }
-        
+
         /* CUSTOM */
 
         return $redirect->with([
@@ -365,7 +365,7 @@ class VoyagerUserController extends BaseVoyagerUserController
 
         return Eventmie::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable'));
     }
-    
+
     /**
      * POST BRE(A)D - Store data.
      *
@@ -422,7 +422,7 @@ class VoyagerUserController extends BaseVoyagerUserController
 
     // public function relation(Request $request)
     // {
-        
+
     //     $slug = $this->getSlug($request);
     //     $page = $request->input('page');
     //     $on_page = 50;
@@ -457,14 +457,14 @@ class VoyagerUserController extends BaseVoyagerUserController
     //             if ($search) {
     //                 // If we are using additional_attribute as label
     //                 if (in_array($options->label, $additional_attributes)) {
-                        
+
     //                     $relationshipOptions = $model->where('id', '<>', 1)->get();
 
     //                     $relationshipOptions = $relationshipOptions->filter(function ($model) use ($search, $options) {
     //                         return stripos($model->{$options->label}, $search) !== false;
     //                     });
 
-                        
+
     //                     $total_count = $relationshipOptions->count();
     //                     $relationshipOptions = $relationshipOptions->forPage($page, $on_page);
     //                 } else {
@@ -476,7 +476,7 @@ class VoyagerUserController extends BaseVoyagerUserController
     //             } else {
     //                 $total_count = $model->count();
     //                 $relationshipOptions = $model->where('id', '<>', 1)->take($on_page)->skip($skip)->get();
-                    
+
     //             }
 
     //             $results = [];
@@ -521,7 +521,7 @@ class VoyagerUserController extends BaseVoyagerUserController
     private function registrationNotification($user)
     {
         // send signup notification
-        // ====================== Notification ====================== 
+        // ====================== Notification ======================
         $mail['mail_subject']   = __('eventmie-pro::em.register_success');
         $mail['mail_message']   = __('eventmie-pro::em.get_tickets');
         $mail['action_title']   = __('eventmie-pro::em.login');
@@ -533,21 +533,21 @@ class VoyagerUserController extends BaseVoyagerUserController
             1, // admin
             $user->id, // new registered user
         ];
-        
+
         $users = User::whereIn('id', $notification_ids)->get();
-        if(checkMailCreds()) 
+        if(checkMailCreds())
         {
             try {
                 \Notification::locale(\App::getLocale())->send($users, new MailNotification($mail));
             } catch (\Throwable $th) {}
         }
-        // ====================== Notification ======================     
+        // ====================== Notification ======================
     }
-    
+
     private function approvedOrganiserNotification($user)
     {
-        // ====================== Notification ====================== 
-        
+        // ====================== Notification ======================
+
         // Became Organizer successfully email
         $msg[]                  = __('eventmie-pro::em.name').' - '.$user->name;
         $msg[]                  = __('eventmie-pro::em.email').' - '.$user->email;
@@ -557,23 +557,24 @@ class VoyagerUserController extends BaseVoyagerUserController
         $mail['mail_message']   = __('eventmie-pro::em.became_organiser_successful_msg');
         $mail['action_title']   = __('eventmie-pro::em.view').' '.__('eventmie-pro::em.profile');
         $mail['action_url']     = route('eventmie.profile');
-        $mail['n_type']         = "Approved-Organizer";
-        
+        //$mail['n_type']         = "Approved-Organizer";
+		$mail['n_type']         = "Approved"; // 2021-10-28
+
         // notification for
         $notification_ids       = [
             1, // admin
             $user->id, // the organizer
         ];
-        
+
         $users = User::whereIn('id', $notification_ids)->get();
         try {
             \Notification::locale(\App::getLocale())->send($users, new MailNotification($mail, $extra_lines));
         } catch (\Throwable $th) {}
-        // ====================== Notification ====================== 
+        // ====================== Notification ======================
 
     }
-    
-    
 
-    
+
+
+
 }
