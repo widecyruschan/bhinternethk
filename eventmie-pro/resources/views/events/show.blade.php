@@ -183,7 +183,7 @@
                                         <a class="lgx-btn lgx-btn-red mt-2" href="/bhcam2/user.php" target="_blank" id="show_btn"><i class="fas fa-ticket-alt"></i> 直播 </a>
                                     @else
                                     <!-- a class="lgx-btn lgx-btn-red mt-2" href="/bhcam2/singleCam.php?v={{$event->review_link}}" target="_blank" id="show_btn"><i class="fas fa-ticket-alt"></i> 回顧 </a -->
-                                        <a class="lgx-btn lgx-btn-red mt-2" href="#" onclick="$('#review_player').submit()" id="show_btn_1"><i class="fas fa-ticket-alt"></i> 回顧 </a>
+                                        <a class="lgx-btn lgx-btn-red mt-2" href="#" onclick="$('#review_player').submit()" id="show_btn_1"><i class="fas fa-ticket-alt"></i> @lang('eventmie-pro::em.review_view') </a>
                                         <!-- a class="lgx-btn lgx-btn-red mt-2" href="#" id="show_btn"><i class="fas fa-ticket-alt"></i> 回顧 </a -->
                                         <form id="review_player" action="/bhcam2/singleCam.php" style="display:none;" method="post" target="_blank">
                                             <input id="video-code" name="v" value="{{$event->review_link}}">

@@ -80,22 +80,22 @@
                             <!-- check booking expired or not -->
 
                             <td :data-title="trans('em.download')">
-                                <div v-if="hide_ticket_download == null" class="mb-2">
+                                <!-- div v-if="hide_ticket_download == null" class="mb-2">
                                     <a v-if="booking.is_paid == 1 && booking.status == 1" class="lgx-btn lgx-btn-sm lgx-btn-success" :href="downloadURL(booking.id, booking.order_number)"><i class="fas fa-download"></i> {{trans('em.ticket')}}</a>
                                     <span class="lgx-badge lgx-badge-small lgx-badge-mute" v-else>
                                         <small v-if="booking.is_paid == 0 && booking.status == 1" class="text-small text-danger">{{ trans('em.unpaid') }}</small>
                                         <small v-else class="text-small">{{ trans('em.disabled') }}</small>
                                     </span>
-                                </div>
+                                </div -->
 
                                 <div v-if="hide_google_calendar == null" class="mb-2">
                                     <create-google-event :booking="booking" :date_format="date_format"></create-google-event>
                                 </div>
 
-                                <div v-if="booking.online_location != null && booking.is_paid == 1 && booking.status == 1">
+                                <!-- div v-if="booking.online_location != null && booking.is_paid == 1 && booking.status == 1">
                                     <button type="button" class="lgx-btn lgx-btn-sm" @click="booking_id = booking.id"><i class="fas fa-tv"></i> {{ trans('em.online') +' '+ trans('em.event') }}</button>
                                     <online-event  v-if="booking_id == booking.id" :online_location="booking.online_location" :booking_id="booking.id" ></online-event>
-                                </div>
+                                </div -->
                             </td>
                         </tr>
 

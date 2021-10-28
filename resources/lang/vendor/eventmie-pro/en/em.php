@@ -9,6 +9,8 @@ return [
     'review_video'                      => '錄播', // 2021-10-27
     'play_live'                         => '多視角直播', // 2021-10-27
     'play_recorded'                     => '錄播', // 2021-10-27
+	'live_view'                         => '直播', // 2021-10-28
+	'review_view'                       => '觀看', // 2021-10-28
 
     'reset'                             => '重置',
     'forgot'                            => '忘記',
@@ -188,7 +190,7 @@ return [
     'when'                              => '何時',
     'get_tickets'                       => '立即獲取門票',
     'got_tickets'                       => '已購買門票', //2021-10-26
-    'select_schedule'                   => '選擇預訂門票的活動日期',
+    'select_schedule'                   => '點擊購票', // 2021-10-28
     'gallery'                           => '相冊',
     'watch'                             => '觀看',
     'trailer'                           => '預告片',

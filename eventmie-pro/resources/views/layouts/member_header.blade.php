@@ -98,10 +98,10 @@
 
 {{-- Admin --}}
 @if(Auth::user()->hasRole('admin'))
-<li class="hidden"> <!-- // 2021-10-14 -->
+<!-- li class="hidden">
     <a class="lgx-scroll" href="{{ route('eventmie.ticket_scan') }}">
     <i class="fas fa-qrcode"></i> @lang('eventmie-pro::em.scan_ticket')</a>
-</li>
+</li -->
 <li>
     <a class="lgx-scroll" href="{{ route('eventmie.myevents_form') }}">
     <i class="fas fa-calendar-plus"></i> @lang('eventmie-pro::em.create_event')</a>
@@ -110,10 +110,10 @@
 
 {{-- Organiser --}}
 @if(Auth::user()->hasRole('organiser'))
-<li>
+<!-- li>
     <a class="lgx-scroll" href="{{ route('eventmie.ticket_scan') }}">
     <i class="fas fa-qrcode"></i> @lang('eventmie-pro::em.scan_ticket')</a>
-</li>
+</li -->
 <li>
     <a class="lgx-scroll" href="{{ route('eventmie.myevents_form') }}">
     <i class="fas fa-calendar-plus"></i> @lang('eventmie-pro::em.create_event')</a>

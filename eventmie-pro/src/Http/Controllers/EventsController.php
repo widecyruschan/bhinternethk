@@ -366,7 +366,7 @@ class EventsController extends Controller
                 ->selectRaw("(SELECT E.excerpt FROM events E WHERE E.id = bookings.event_id) event_excerpt")
                 ->selectRaw("(SELECT E.venue FROM events E WHERE E.id = bookings.event_id) event_venue")
                 ->selectRaw("(SELECT E.online_location FROM events E WHERE E.id = bookings.event_id AND bookings.is_paid = 1  AND bookings.status = 1) online_location")
-                ->where(['customer_id' => Auth::id(), 'event_id' => $event_id, 'is_paid' => 1 ])
+                ->where(['customer_id' => Auth::id(), 'event_id' => $event_id, 'is_paid' => 1, 'status' => 1 ])
                 ->orderBy('id', 'desc')->paginate(10);
         $my_bookings = $bookings->jsonSerialize();
         $my_bookings = $my_bookings['data'];
