@@ -12,27 +12,31 @@
                 <a :href="eventSlug(event.slug)" >
 
                     <!-- simple events means without repetitive who Upcomming-->
-                    <div class="lgx-event__tag" 
+                    <!-- <div class="lgx-event__tag" 
                         v-if="!event.repetitive && moment().format('YYYY-MM-DD') < convert_date_to_local(event.start_date, 'YYYY-MM-DD')"
                     >
                         <span>{{countDays(moment().format("YYYY-MM-DD"), convert_date_to_local(event.start_date, "YYYY-MM-DD"))-1}} {{ trans('em.days_left') }} </span>
                         <span>{{ trans('em.upcoming') }}</span>
-                    </div>
+                    </div> -->
 
                     <!-- simple events means without repetitive who today-->
-                    <div class="lgx-event__tag" 
+                    <!-- <div class="lgx-event__tag" 
                         v-if="!event.repetitive && moment().format('YYYY-MM-DD') == convert_date_to_local(event.start_date, 'YYYY-MM-DD')"
                     >
                         <span>{{ trans('em.today') }}</span>
                         <span>{{ trans('em.event') }}</span>
-                    </div>
+                    </div> -->
 
                      <!-- simple events means without repetitive who ended-->
-                    <div class="lgx-event__tag" v-if="!event.repetitive && moment().format('YYYY-MM-DD') > 
+                    <!-- <div class="lgx-event__tag" v-if="!event.repetitive && moment().format('YYYY-MM-DD') > 
                             convert_date_to_local(event.start_date,'YYYY-MM-DD')"
                     >
                         <span>{{ trans('em.ended') }}</span>
                         <span>{{ trans('em.event') }}</span>
+                    </div> -->
+                    
+                    <div class="lgx-event__image">
+                        <img :src="'/storage/'+event.thumbnail" alt="">
                     </div>
                     <div class="event_comInfo">
                     <!-- repetitive events who Upcoming  -->
@@ -62,10 +66,34 @@
                         <span>{{ trans('em.event') }}</span>
                     </div>
                         </div>
-                    <div class="lgx-event__image">
-                        <img :src="'/storage/'+event.thumbnail" alt="">
+<div class="event_comInfo">
+                    <!-- repetitive events who Upcoming  -->
+                    <div class="lgx-event__tag" v-if="event.repetitive && moment().format('YYYY-MM-DD') < convert_date_to_local(event.start_date, 'YYYY-MM-DD')"
+                    >
+                        <span>{{countDays(moment().format("YYYY-MM-DD"), convert_date_to_local(event.start_date, "YYYY-MM-DD"))-1}} {{ trans('em.days_left') }} </span>
+                        <span >{{ trans('em.upcoming') }}</span>
+                    </div>
+                    
+                    <!-- repetitive events who Started -->
+                    <div class="lgx-event__tag" v-if="event.repetitive && moment().format('YYYY-MM-DD') >= convert_date_to_local(event.start_date, 'YYYY-MM-DD')     && moment().format('YYYY-MM-DD') <= convert_date_to_local(event.end_date, 'YYYY-MM-DD')"
+                    >
+                        <span>{{ changeDateFormat(moment(convert_date_to_local(event.start_date, "YYYY-MM-DD"))) }}</span>
+                        <span >{{ trans('em.started') }}</span>
                     </div>
 
+                     <!-- repetitive events who Ended -->
+                     
+                    <div class="lgx-event__tag" v-if="event.repetitive && moment().format('YYYY-MM-DD') > convert_date_to_local(event.end_date, 'YYYY-MM-DD')">
+                        <span >{{ trans('em.event') }}</span>
+                        <span>{{ trans('em.ended') }}</span>
+                    </div>
+                     
+                    <!-- online event -->
+                    <div class="lgx-event__online" v-if="event.online_location">
+                        <span><i class="fas fa-signal"></i> {{ trans('em.online') }}</span>
+                        <span>{{ trans('em.event') }}</span>
+                    </div>
+                        </div>
                     <div class="lgx-event__info">
                         <div class="lgx-event__featured" v-if="event.repetitive">
                             

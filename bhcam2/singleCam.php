@@ -17,13 +17,13 @@
     <style>
 
     video::-webkit-media-controls-play-button {
-         display: none;
+          display: none; 
      }
      video::-webkit-media-controls-timeline {
 
      }
      video::-webkit-media-controls-current-time-display{
-         display: none;
+          display: none; 
      }
 video::-webkit-media-controls-time-remaining-display {
     display: none;
@@ -44,12 +44,12 @@ video::-webkit-media-controls-time-remaining-display {
 
 audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-controls-closed-captions-container {
     display: none;
-}
+} 
 
         .panel-body row div {
             position: relative;
         }
-
+        .player .vp-controls .custom-logo{display:none!important;}
         .mt-20 {
             margin-top: 20px;
         }
@@ -133,11 +133,8 @@ audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-co
     .embed-container {
         position: relative;
         padding-bottom: 56.25%;
-
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        height: auto;
+        height: 0; overflow: hidden;
+        max-width: 100%; height: auto;
     }
 
     .embed-container iframe,
@@ -145,7 +142,7 @@ audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-co
     .embed-container embed {
         position: absolute;
         width: 100%;
-        height: 75%;
+        height: 100%;
     }
     </style>
 </head>
@@ -171,15 +168,16 @@ audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-co
                                         <!-- iframe src="https://player.vimeo.com/video/440962252?h=<?php echo $_REQUEST['v'] ?>" width="100%"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe -->
                                             <div class='embed-container'>
 												<?php if (is_numeric($_REQUEST['v'])) : ?>
-                                                    <iframe src='https://player.vimeo.com/video/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                    <iframe src='https://player.vimeo.com/video/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=1&portrait=1' width="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 												<?php else : ?>
-                                                    <iframe src='https://www.youtube.com/embed/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                    <iframe src='https://www.youtube.com/embed/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=1&portrait=1' fwidth="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 												<?php endif; ?>
                                             </div>
                                         <?php endif; ?>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-offset-1 col-md-10">
+                                        <div class="col-md-offset-1 col-md-10" style="margin-top:30px;">
+                                        <h5>活動介紹</h5>
                                         <?php echo json_decode($_REQUEST['desc']) ?>
                                     </div>
                                     </div>
