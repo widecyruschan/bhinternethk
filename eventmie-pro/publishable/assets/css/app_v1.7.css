@@ -8656,6 +8656,7 @@ ul.list-group li.list-group-item:last-child {
     display: none;
 }
 .lgx-event .title {
+    display: -webkit-box;
     font-size: 16px;
     line-height: 24px;
     font-size: 2rem;
@@ -8664,6 +8665,11 @@ ul.list-group li.list-group-item:last-child {
     line-height: 2.6rem;
     margin-top: 0;
     transition: all 0.3s ease-out;
+    height: 5.2rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .lgx-event .sub-title {
     font-size: 1.8rem;
@@ -9453,6 +9459,9 @@ table.dataTable.no-footer {
         padding: 1rem 6.7rem;
         margin: 8px 3%;
         width: 94%;
+    }
+    .lgx-event__tag span ,.lgx-event__online span{
+        font-size: 12px;;
     }
 }
 @media (max-width: 480px) {
