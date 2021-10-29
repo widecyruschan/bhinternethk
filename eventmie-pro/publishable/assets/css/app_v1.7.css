@@ -8511,9 +8511,8 @@ ul.list-group li.list-group-item:last-child {
     display: flex;
     color: #fff;
     font-size: 1rem;
-    font-size: 18px;;
+    font-size: 16px;;
     font-weight: 400;
-
     float: left;
     text-shadow: 0 3px 2px #000;
 }
@@ -8523,23 +8522,16 @@ ul.list-group li.list-group-item:last-child {
 .lgx-event__online span {
     float: left;
 }
-/* .lgx-event__tag span :hover,.lgx-event__online span :hover{
-   background: var(--font-color-gold);
-} */
+
 .lgx-event__tag span:nth-child(2n+1) {
     padding:10px 5px 10px 10px;
-    /* background: rgba(27, 137, 239, 0.8); */
 
     border-bottom-left-radius: 0;
-    /* border-top-left-radius: 12px; */
 }
 .lgx-event__tag span:nth-child(2n) {
-    /* background: rgba(0, 25, 47, 0.6); */
     padding:10px 10px 10px 5px;
     border-top-left-radius: 0;
     color: #3c4146;
-    /* border-bottom: 2px solid #1b89ef; */
-    /* padding-bottom:10px ; */
 }
 .lgx-event__online {
     position: absolute;
@@ -9466,6 +9458,9 @@ table.dataTable.no-footer {
 @media (max-width: 480px) {
     .main-search .input-group-addon {
         padding: 0 8px 0 12px;
+    }
+    .lgx-event__tag span ,.lgx-event__online span{
+        font-size: 12px;;
     }
     .main-search .date-search,
     .main-search .event-search {
