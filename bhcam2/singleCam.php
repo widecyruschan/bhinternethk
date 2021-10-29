@@ -45,7 +45,7 @@ video::-webkit-media-controls-time-remaining-display {
 audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-controls-closed-captions-container {
     display: none;
 } 
-
+        .col-xs-8{padding:0;margin:0;}
         .panel-body row div {
             position: relative;
         }
@@ -165,12 +165,11 @@ audio::-webkit-media-controls-closed-captions-container, video::-webkit-media-co
                                         <?php if (! $_REQUEST['v']) : ?>
                                         <video id="camera-main" poster="cam.png" style="width: 100%;" controls></video>
                                         <?php else : ?>
-                                        <!-- iframe src="https://player.vimeo.com/video/440962252?h=<?php echo $_REQUEST['v'] ?>" width="100%"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe -->
                                             <div class='embed-container'>
 												<?php if (is_numeric($_REQUEST['v'])) : ?>
-                                                    <iframe src='https://player.vimeo.com/video/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=1&portrait=1' width="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                                    <iframe src='https://player.vimeo.com/video/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=0&portrait=1&controls=1' width="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 												<?php else : ?>
-                                                    <iframe src='https://www.youtube.com/embed/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=1&portrait=1' fwidth="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                                    <iframe src='https://www.youtube.com/embed/<?php echo $_REQUEST['v'] ?>?autoplay=1&loop=1&byline=0&portrait=1&controls=1' fwidth="100%" frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 												<?php endif; ?>
                                             </div>
                                         <?php endif; ?>
