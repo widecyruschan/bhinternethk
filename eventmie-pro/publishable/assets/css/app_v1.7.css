@@ -9750,6 +9750,14 @@ table tr td .lgx-btn{background: var(--font-color-gold3)!important;}
 table tr td .lgx-btn.lgx-btn-danger {background: var(--font-color-gold2)!important;}
 .ticketsPurchased { background: #ccc!important;}
 
+.form-radio-row { /* // 2021-10-29  Event - Media */
+    padding-top:7px;
+}
+.form-radio-row span { /* // 2021-10-29  Event - Media */
+    font-weight: 300;
+    margin-right: 20px;
+}
+
 .bookings-container {
     width: 80%;
     max-width: none;
