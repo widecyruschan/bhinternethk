@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                    
+
                         <div class="card">
                             <div class="card-body">
                                 <form class="form-horizontal" action="{{ route('eventmie.updateAuthUser')}}" method="post">
@@ -21,7 +21,7 @@
                                         <label class="col-md-3">@lang('eventmie-pro::em.name')*</label>
                                         <div class="col-md-9">
                                             <input class="form-control" name="name" type="text" value="{{$user->name}}">
-                                            
+
                                             @if ($errors->has('name'))
                                                 <div class="error">{{ $errors->first('name') }}</div>
                                             @endif
@@ -37,7 +37,7 @@
                                         </div>
                                     </div>
 
-                                    
+
                                     <div class="form-group row">
                                         <label class="col-md-3">@lang('eventmie-pro::em.address')</label>
                                         <div class="col-md-9">
@@ -82,10 +82,10 @@
                                             @if ($errors->has('current'))
                                                 <div class="error">{{ $errors->first('current') }}</div>
                                             @endif
-                                        
+
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group row">
                                         <label class="col-md-3">@lang('eventmie-pro::em.new') @lang('eventmie-pro::em.password')</label>
                                         <div class="col-md-9">
@@ -95,7 +95,7 @@
                                             @endif
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group row">
                                         <label class="col-md-3">@lang('eventmie-pro::em.confirm_password')</label>
                                         <div class="col-md-9">
@@ -108,7 +108,7 @@
 
                                     {{-- only for organiser and admin --}}
                                     @if(!Auth::user()->hasRole('customer'))
-
+                                    <div class="hidden">
                                         <hr>
                                             <h4>@lang('eventmie-pro::em.update_bank_details')</h4>
                                         <hr>
@@ -184,8 +184,9 @@
 
                                         @yield('eventmie-profile-profile')
 
+                                    </div>
                                     @endif
-                                    
+
                                     <div class="form-group row">
                                         <div class="col-md-9 offset-md-3">
                                             <button class="lgx-btn" type="submit"><i class="fas fa-sd-card"></i> @lang('eventmie-pro::em.save_profile')</button>
@@ -196,7 +197,7 @@
                                 {{-- if logged in user is customer and multi-vendor mode is enabled --}}
                                 @if(Auth::user()->hasRole('customer'))
                                     @if(setting('multi-vendor.multi_vendor'))
-                                    
+
                                         @if((setting('multi-vendor.manually_approve_organizer') && empty($user->organisation)) || !setting('multi-vendor.manually_approve_organizer'))
 
                                             <div class="form-group row">
@@ -207,16 +208,16 @@
                                             </div>
                                         @endif
                                     @endif
-                                    
+
                                     @if(setting('multi-vendor.manually_approve_organizer') && !empty($user->organisation))
                                         <div class="alert alert-info" role="alert">
-                                            <strong>@lang('eventmie-pro::em.become_organiser_notification')</strong> 
+                                            <strong>@lang('eventmie-pro::em.become_organiser_notification')</strong>
                                         </div>
                                     @endif
                                 @endif
-                                
+
                                 <!-- Modal -->
-                                
+
                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -239,33 +240,33 @@
                                                 <form class="form-horizontal" action="{{ route('eventmie.updateAuthUserRole')}}" method="post">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                     <input type="hidden" name="role_id" value="3">
-                                                    
+
                                                     <div class="form-group row">
                                                         <label class="col-md-3">@lang('eventmie-pro::em.organization')</label>
                                                         <div class="col-md-9">
                                                             <input class="form-control" name="organisation" type="text" placeholder="@lang('eventmie-pro::em.brand_identity')" value="{{$user->organisation}}">
-                                                        
+
                                                             @if ($errors->has('organisation'))
                                                                 <div class="error">{{ $errors->first('organisation') }}</div>
                                                             @endif
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="form-group row">
                                                         <div class="col-md-12 text-right">
                                                             <button type="submit" class="lgx-btn"><i class="fas fa-sd-card"></i> @lang('eventmie-pro::em.submit')</button>
                                                         </div>
                                                     </div>
 
-                                                </form>    
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
