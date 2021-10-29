@@ -371,6 +371,19 @@ class EventsController extends Controller
         $my_bookings = $bookings->jsonSerialize();
         $my_bookings = $my_bookings['data'];
 
+
+        // 2021-10-29
+		date_default_timezone_set('Asia/Hong_Kong');
+		$event = $this->event->get_event(null, $event_id);
+		if ($event->event_mode=='live') {
+			foreach ($my_bookings as $k => $v) {
+				$startTime = strtotime($v['event_start_date'] . ' ' . substr($v['event_start_time'], 0, 8)) - (10 * 60);
+				$endTime = strtotime($v['event_end_date'] . ' ' . substr($v['event_end_time'], 0, 8)) + (10 * 60);
+				$on_air = (time() >= $startTime && time() <= $endTime) ? 'Y' : 'N';
+				$my_bookings[$k]['on_air'] = $on_air;
+			}
+		}
+
         return [
             'tickets' => $tickets,
             'currency' => setting('regional.currency_default'),

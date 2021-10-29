@@ -96,10 +96,11 @@
                                     <button type="button" class="lgx-btn lgx-btn-sm" @click="booking_id = booking.id"><i class="fas fa-tv"></i> {{ trans('em.online') +' '+ trans('em.event') }}</button>
                                     <online-event  v-if="booking_id == booking.id" :online_location="booking.online_location" :booking_id="booking.id" ></online-event>
                                 </div -->
+
                                 <div v-if="booking.event_mode=='recorded' && booking.is_paid == 1 && booking.status == 1">
                                   <button type="button" class="lgx-btn lgx-btn-sm" @click="openReview(booking.review_link, booking.review_desc)"><i class="fas fa-tv"></i> {{ trans('em.review_view') }}</button>
                                 </div>
-                              <div v-if="booking.event_mode=='live' && booking.is_paid == 1 && booking.status == 1">
+                              <div v-if="booking.event_mode=='live' && booking.is_paid == 1 && booking.status == 1 && booking.on_air=='Y'">
                                 <button type="button" class="lgx-btn lgx-btn-sm" @click="openLive()"><i class="fas fa-tv"></i> {{ trans('em.live_view') }}</button>
                               </div>
                             </td>
@@ -259,6 +260,7 @@ export default {
           $('body').append(form);
           $('#live_player').submit();
         },
+
     },
     mounted() {
         this.getMyBookings();

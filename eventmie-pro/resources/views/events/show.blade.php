@@ -180,7 +180,9 @@
                                     <a class="lgx-btn lgx-btn-red mt-2 ticketsPurchased" href="#"><i class="fas fa-ticket-alt"></i> @lang('eventmie-pro::em.got_tickets')</a>
 
                                     @if(empty($event['review_link']))
+                                        @if($my_bookings[0]['on_air']=='Y')
                                         <a class="lgx-btn lgx-btn-red mt-2" href="/bhcam2/user.php" target="_blank" id="show_btn"><i class="fas fa-ticket-alt"></i> 直播 </a>
+                                        @endif
                                     @else
                                     <!-- a class="lgx-btn lgx-btn-red mt-2" href="/bhcam2/singleCam.php?v={{$event->review_link}}" target="_blank" id="show_btn"><i class="fas fa-ticket-alt"></i> 回顧 </a -->
                                         <a class="lgx-btn lgx-btn-red mt-2" href="#" onclick="$('#review_player').submit()" id="show_btn_1"><i class="fas fa-ticket-alt"></i> @lang('eventmie-pro::em.review_view') </a>
