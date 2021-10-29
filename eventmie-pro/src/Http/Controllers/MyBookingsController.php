@@ -1,7 +1,7 @@
 <?php
 
 namespace Classiebit\Eventmie\Http\Controllers;
-use App\Http\Controllers\Controller; 
+use App\Http\Controllers\Controller;
 use Facades\Classiebit\Eventmie\Eventmie;
 
 use Illuminate\Http\Request;
@@ -26,7 +26,7 @@ use Classiebit\Eventmie\Notifications\MailNotification;
 
 class MyBookingsController extends Controller
 {
-    
+
     /**
      * Create a new controller instance.
      *
@@ -46,7 +46,7 @@ class MyBookingsController extends Controller
         $this->commission   = new Commission;
 
     }
-    
+
     /**
      * Show my booking
      *
@@ -60,8 +60,8 @@ class MyBookingsController extends Controller
             $path = config('eventmie.route.prefix');
 
         // if have booking email data then send booking notification
-        $is_success = !empty(session('booking_email_data')) ? 1 : 0;    
-    
+        $is_success = !empty(session('booking_email_data')) ? 1 : 0;
+
         return Eventmie::view($view, compact('path', 'is_success','extra'));
     }
 
@@ -74,8 +74,27 @@ class MyBookingsController extends Controller
 
         $bookings    = $this->booking->get_my_bookings($params);
 
+        // 2021-10-29
+		date_default_timezone_set('Asia/Hong_Kong');
+		$info = $bookings->jsonSerialize();
+		$data = $info['data'];
+		foreach ($data as $k => $v) {
+			$startTime = strtotime($v['event_start_date'].' '.substr($v['event_start_time'],0,8)) - (10 * 60);
+			$endTime = strtotime($v['event_end_date'].' '.substr($v['event_end_time'],0,8)) + (10 * 60);
+			$on_air = (time() >= $startTime && time() <= $endTime) ? 'Y' : 'N';
+//			$info['data'][$k]['st'] = $v['event_start_date'].' '.substr($v['event_start_time'],0,8);
+//			$info['data'][$k]['ed'] = $v['event_end_date'].' '.substr($v['event_end_time'],0,8);
+//			$info['data'][$k]['now'] = date('Y-m-d H:i:s');
+//			$info['data'][$k]['s'] = $startTime;
+//			$info['data'][$k]['e'] = $endTime;
+//			$info['data'][$k]['n'] = time();
+			$info['data'][$k]['on_air'] = $on_air;
+		}
+//		echo '<pre>'; print_r($info); exit;
+
         return response([
-            'bookings'  => $bookings->jsonSerialize(),
+            //'bookings'  => $bookings->jsonSerialize(),
+			'bookings'  => $info, // 2021-10-29
             'currency'  => setting('regional.currency_default'),
         ], Response::HTTP_OK);
 
@@ -109,22 +128,22 @@ class MyBookingsController extends Controller
 
         // check booking id in booking table for login user
         $check_booking     = $this->booking->check_booking($params);
-        
+
         if(empty($check_booking))
             return error(__('eventmie-pro::em.booking').' '.__('eventmie-pro::em.not_found'), Response::HTTP_BAD_REQUEST );
 
         $start_date              = Carbon::parse($check_booking['event_start_date'].' '.$check_booking['event_start_time']);
         $end_date                = Carbon::parse(Carbon::now());
-        
+
         // check date expired or not
         if($end_date > $start_date)
             return error(__('eventmie-pro::em.booking_cancellation_fail'), Response::HTTP_BAD_REQUEST );
 
-        // pre booking time cancellation check    
-        $pre_cancellation_time  = (float) setting('booking.pre_cancellation_time'); 
+        // pre booking time cancellation check
+        $pre_cancellation_time  = (float) setting('booking.pre_cancellation_time');
         $min                    = number_format((float)($start_date->diffInMinutes($end_date) ), 2, '.', '');
         $hour_difference        = (float)sprintf("%d.%02d", floor($min/60), $min%60);
-        
+
         if($pre_cancellation_time > $hour_difference)
             return error(__('eventmie-pro::em.booking_cancellation_fail'), Response::HTTP_BAD_REQUEST );
 
@@ -136,8 +155,8 @@ class MyBookingsController extends Controller
 
         /* use updated booking data */
         $check_booking->booking_cancel = 1;
-        
-        // ====================== Notification ====================== 
+
+        // ====================== Notification ======================
         //send notification after bookings
         $msg[]                  = __('eventmie-pro::em.customer').' - '.$check_booking->customer_name;
         $msg[]                  = __('eventmie-pro::em.email').' - '.$check_booking->customer_email;
@@ -166,21 +185,21 @@ class MyBookingsController extends Controller
         $mail['n_type']       =  "cancel";
 
         $notification_ids       = [1, Auth::id(), $check_booking->organiser_id];
-        
+
         $users = User::whereIn('id', $notification_ids)->get();
         try {
             \Notification::locale(\App::getLocale())->send($users, new MailNotification($mail, $extra_lines));
         } catch (\Throwable $th) {}
         // ====================== Notification ======================
-        
+
 
         return response([
             'status'=> true,
         ], Response::HTTP_OK);
-        
+
     }
 
-    
+
 
 
 }
