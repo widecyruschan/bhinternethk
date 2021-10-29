@@ -9742,6 +9742,7 @@ table tr td .lgx-btn.lgx-btn-danger {background: var(--font-color-gold2)!importa
 }
 .form-radio-row span { /* // 2021-10-29  Event - Media */
     font-weight: 300;
+    margin-right: 20px;
 }
 
 .bookings-container {

@@ -116,6 +116,8 @@
                             <div class="col-md-6 form-radio-row">
                                 <input type="radio" class="custom-control-input" name="event_mode"  v-model="event_mode" value="live" v-validate="'required'" @change="isDirty()"> <span> {{ trans('em.play_live') }}</span>
                                 <input type="radio" class="custom-control-input" name="event_mode"  v-model="event_mode" value="recorded" v-validate="'required'" @change="isDirty()"> <span> {{ trans('em.play_recorded') }}</span>
+                                <br/>
+                                <span v-show="errors.has('event_mode')" class="help text-danger">{{ errors.first('event_mode') }}</span>
                             </div>
                         </div>
 
